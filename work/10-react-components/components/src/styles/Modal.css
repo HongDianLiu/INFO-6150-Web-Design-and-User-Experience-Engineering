@@ -1,0 +1,59 @@
+.modal {
+    max-width: 400px;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .modal input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-container button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .button-container button[type="button"] {
+    background-color: lightgray;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button[type="button"]:hover {
+    background-color: gray;
+  }

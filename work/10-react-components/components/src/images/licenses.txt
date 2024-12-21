@@ -1,0 +1,7 @@
+yellow-cat.jpg: https://unsplash.com/photos/brown-tabby-cat-7GX5aICb5i4
+orange-cat.jpg: https://unsplash.com/photos/short-haired-white-and-brown-cat-G7kUPmzi80E
+fury-cat.jpg: https://unsplash.com/photos/sitting-orange-persian-cat-13ky5Ycf0ts
+logo.jpg: https://unsplash.com/photos/white-cat-sleeps-under-white-comforter-uy5t-CJuIK4
+gray-cat.jpg: https://unsplash.com/photos/selective-focus-photo-of-gray-tabby-cat-IbPxGLgJiMI
+basket-cats.jpg: https://unsplash.com/photos/four-assorted-color-tabby-kittens-on-brown-basket-YCPkW_r_6uA
+scarf-cats.jpg: https://unsplash.com/photos/selective-focus-photography-brown-cat-lying-over-black-cat-1l2waV8glIQ

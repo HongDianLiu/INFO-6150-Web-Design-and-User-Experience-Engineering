@@ -1,0 +1,8 @@
+*, *::before, *::after {
+  margin: o;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: system-ui, sans-serif;
+}

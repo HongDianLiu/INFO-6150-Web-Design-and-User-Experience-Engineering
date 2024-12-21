@@ -1,0 +1,15 @@
+pic1.jpg: self-owned
+assignment1.jpg: self-owned
+assignment2.jpg: self-owned
+assignment3.jpg: self-owned
+assignment4.jpg: self-owned
+assignment6.jpg: self-owned
+assignment7.jpg: self-owned
+assignment9.jpg: self-owned
+assignment10pic1.jpg: self-owned
+assignment10pic2.jpg: self-owned
+assignment11pic1.jpg: self-owned
+assignment11pic2.jpg: self-owned
+project1.jpg: self-owned
+project2pic1.jpg: self-owned
+project2pic2.jpg: self-owned

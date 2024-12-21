@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    line-height: 1;
+    font-weight: semi-bold;
+    display: flex;
+    flex-direction: column;
+}
+
+#homepage {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: plum;
+    padding: 17px 0;
+}
+
+.primary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.primary-nav ul li a {
+    color: blue;
+    padding: 17px 17px; 
+    text-decoration: underline;
+}
+
+.primary-nav ul li a:hover {
+    background-color: rebeccapurple;
+    color: white;
+    cursor: pointer;
+}
+
+.local-menu {
+    width: 20%;
+    padding: 15px 0 10px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 60px;
+    bottom: 60px;
+}
+
+.local-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.local-menu ul li a {
+    color: blue;
+    margin-bottom: 15px;
+    display: block;
+    padding: 10px;
+    background-color: pink;
+    text-decoration: underline;
+}
+
+.local-menu ul li a:hover {
+    background-color: plum;
+}
+
+main {
+    margin-left: 20%;
+    padding: 2px 5px 2px 15px;
+    box-sizing: border-box;
+    line-height: 1;
+    border-left: 0.5px solid black;
+}
+
+main p {
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: plum;
+    color: black;
+    text-align: left;
+    padding: 18px 10px;
+}
+
+footer a {
+    color: blue;
+    text-decoration: underline;
+    padding: 5px;
+}

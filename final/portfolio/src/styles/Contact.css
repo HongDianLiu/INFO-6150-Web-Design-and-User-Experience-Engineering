@@ -1,0 +1,79 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #116466, #d1e8e2);
+    color: #333;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.15);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .contact {
+    background: linear-gradient(135deg, #1e2624, #2c3531);
+    color: #d1e8e2;
+    box-shadow: 0 0.8rem 2rem rgba(255, 255, 255, 0.1);
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #116466;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .contact h1 {
+    color: #ffcb9a;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+body.dark-mode .contact p {
+    color: #d1e8e2;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-buttons .open-modal-button {
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #ffcb9a;
+    color: #116466;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .contact-buttons .open-modal-button {
+    background-color: #354a48;
+    color: #ffffff;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
+}
+
+.contact-buttons .open-modal-button:hover {
+    background-color: #116466;
+    color: #ffffff;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .contact-buttons .open-modal-button:hover {
+    background-color: #ffcb9a;
+    color: #333;
+    box-shadow: 0 0.8rem 1.8rem rgba(255, 255, 255, 0.3);
+}

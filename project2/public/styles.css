@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: papayawhip;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    background-color: burlywood;
+    grid-column: span 12;
+    display: grid;
+    align-items: center;
+    gap: 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    grid-column: 1 / 2;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    grid-column: 2 / 12;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    padding: 8px;
+    color: black;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    position: absolute;
+    top: 2rem; 
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: blue   ;
+    z-index: 100;
+}
+
+.primary-nav {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.primary-nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.primary-nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.panel {
+    display: block;
+    background-color: #eee;
+    padding: 0.5rem;
+    border: 1px solid black;
+    margin: 0.5rem;
+    grid-column: span 12;
+}
+
+.panel h2 {
+    margin-bottom: 0.5rem; 
+}
+
+.panel p {
+    margin: 0.5rem o;
+}
+
+.panel-img {
+    width: 200px;
+    height: 200px;
+    margin: 0.5rem;
+    float: right;
+}
+
+.panel-img.left {
+    float: left; 
+}
+
+.cat-card {
+    grid-column: span 4;
+    background-color: #eee;
+    padding: 0.5rem;
+    margin: 0.5rem; 
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+.cat-card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.cat-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cat-card p.description {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.subscribe-container {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.subscribe-wrapper {
+    display: inline;
+}
+
+.subscribe-link {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subscribe-link:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: auto;
+    background-color: burlywood;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer-nav {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+    text-align: center;
+    background-color: burlywood;
+}
+
+.footer-nav li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: flex; 
+    flex-direction: column; 
+    padding: 1rem; 
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.modal label {
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.modal input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal input.error {
+    border-color: red;
+}
+
+.modal .error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.modal .button-container {
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 100px;
+    width: 100%; 
+    margin-top: 1.5rem;
+}
+
+.modal button {
+    width: 40%; 
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#subscribe-btn {
+    background-color: lightgreen;
+    color: black;
+    border: 1px solid black;
+}
+
+#subscribe-btn:hover {
+    background-color: lime;
+}
+
+#cancel-btn {
+    background-color: lightcoral;
+    color: black;
+    border: 1px solid black;
+}
+
+#cancel-btn:hover {
+    background-color: red;
+}
+
+@media (max-width: 44rem) {
+    .header {
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+
+    h1 {
+        grid-column: span 2;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.2;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .primary-nav {
+        padding: 0;
+    }
+
+    .primary-nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100px;
+        background-color: burlywood;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        z-index: 100;
+    }
+
+    .primary-nav ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .logo {
+        grid-column: 1 / 2;
+        justify-self: start;
+    }
+
+    .panel {
+        display: block;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    .panel-img {
+        width: 125px;
+        height: 125px;
+        margin: 0.5rem;
+    }
+
+    .panel-img.left {
+        float: left;
+        margin: 0.5rem;
+    }
+
+    .panel-img.right {
+        float: right;
+        margin-left: 0;
+        margin-right: 0.5rem;
+    }
+
+    .cat-card {
+        grid-column: span 12;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

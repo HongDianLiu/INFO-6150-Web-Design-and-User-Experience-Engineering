@@ -1,0 +1,44 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+}
+
+.header__logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header__title {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    padding: 0.5rem;
+}
+
+.header__nav {
+    justify-self: end;
+}
+
+@media (max-width: 40rem) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+    }
+
+    .header__title {
+        grid-column: 1 / -1;
+    }
+
+    .header__logo {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
+  

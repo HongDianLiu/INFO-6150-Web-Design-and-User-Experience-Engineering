@@ -1,0 +1,4 @@
+logo.jpg: https://unsplash.com/photos/white-cat-sleeps-under-white-comforter-uy5t-CJuIK4
+pic1.png:self-owned
+pic2.png:self-owned
+pic3.png:self-owned

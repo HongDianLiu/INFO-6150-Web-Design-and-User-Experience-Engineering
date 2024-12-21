@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    background-color: #2C3531;
+    color: #D1E8E2;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-left h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #D9B08C;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li a {
+    color: #D1E8E2;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #FFCB9A;
+}
+
+.hamburger-button {
+    display: none;
+    background: none;
+    color: #D1E8E2;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hamburger-button:hover {
+    color: #FFCB9A;
+}
+
+@media (max-width: 40rem) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(44, 53, 49, 0.95);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        padding: 1.5rem 1rem;
+        gap: 1.2rem;
+        transform: translateY(-30px);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s;
+    }
+
+    .navbar-menu.open {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hamburger-button {
+        display: block;
+        font-size: 2rem;
+        color: #D1E8E2;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .hamburger-button:hover {
+        color: #FFCB9A;
+        transform: rotate(90deg);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    .nav-list li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-list li a {
+        display: block;
+        padding: 0.8rem 0;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #D1E8E2;
+        background: linear-gradient(90deg, rgba(255, 203, 154, 0.2), rgba(17, 100, 102, 0.3));
+        border-radius: 0.5rem;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-list li a:hover {
+        background: linear-gradient(90deg, #FFCB9A, #116466);
+        color: #ffffff;
+        transform: scale(1.05);
+    }
+
+    .nav-list li a:active {
+        transform: scale(0.95);
+    }
+}

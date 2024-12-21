@@ -1,0 +1,14 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inventory-count {
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 1rem;
+}
