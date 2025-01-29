@@ -1,7 +1,5 @@
 # INFO6150 - Web UI/UX Engineering
 
-This repository is how you will receive and submit your assignments and projects.
-
 Key parts:
 
 - README - this document
